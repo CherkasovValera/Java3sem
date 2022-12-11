@@ -54,9 +54,15 @@ public class seminar3 {
         // *10 Сортировка списка.
         Collections.sort(flora);
         System.out.println(flora);
-// *11 Сравнить время работы тысячи повторений пункта 3 для ArrayList и LinkedList.
-        
         System.out.println(Collections.nCopies(100, colors));
+// *11 Сравнить время работы тысячи повторений пункта 3 для ArrayList и LinkedList.
+        String s="baz";
+        long start = System.currentTimeMillis();
+        for ( int i=0; i<100000; i++){
+            s+=Character.toString(i);
+        }
+        System.out.println(System.currentTimeMillis() - start);
+        start = System.currentTimeMillis();
     }
 }
 
