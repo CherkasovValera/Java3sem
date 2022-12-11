@@ -22,17 +22,31 @@ public class seminar3 {
 // 3 Вставить элемент в список в первой позиции.
         colors.add(0,"Green");
         System.out.println(colors);
-        // for(int i=0; i<colors.size(); i++){
-        //     colors[i]= 5;
-        // }
+// 4 Извлечь элемент (по указанному индексу) из заданного списка.
+        System.out.println(colors.get(2));
+// 5 Обновить определенный элемент списка по заданному индексу.
+        colors.set(1,"Purpur");
+        System.out.println(colors);
+// 6 Удалить третий элемент из списка.
+        colors.remove(2);
+        System.out.println(colors);
+// 7 Поиска элемента в списке по строке.
+        System.out.println(colors.contains("Green"));
+// 8 Создать новый список и добавить в него несколько елементов первого списка.
+        ArrayList<String> flora = new ArrayList<>();
+        flora.add(0,colors.get(0));
+        flora.add(1,colors.get(3));
+        flora.add(2,colors.get(2));
+        System.out.println(flora);
+// 9 Удалить из первого списка все элементы отсутствующие во втором списке.
+
+        for(int i=0; i<colors.size(); i++){
+            if(flora.contains(colors.get(i)));
+                colors.remove(i);
+        }
+        System.out.println(colors);
     }
 }
-    // 4 Извлечь элемент (по указанному индексу) из заданного списка.
-    // 5 Обновить определенный элемент списка по заданному индексу.
-    // 6 Удалить третий элемент из списка.
-    // 7 Поиска элемента в списке по строке.
-    // 8 Создать новый список и добавить в него несколько елементов первого списка.
-    // 9 Удалить из первого списка все элементы отсутствующие во втором списке.
     // *10 Сортировка списка.
     // *11 Сравнить время работы тысячи повторений пункта 3 для ArrayList и LinkedList.
 
