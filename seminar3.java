@@ -1,9 +1,15 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.ListIterator;
 
 public class seminar3 {
     
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 // 1 Создать новый список, добавить несколько строк и вывести коллекцию на экран.
         ArrayList<String> colors = new ArrayList<>();
@@ -45,9 +51,13 @@ public class seminar3 {
                 colors.remove(i);
         }
         System.out.println(colors);
+        // *10 Сортировка списка.
+        Collections.sort(flora);
+        System.out.println(flora);
+// *11 Сравнить время работы тысячи повторений пункта 3 для ArrayList и LinkedList.
+        
+        System.out.println(Collections.nCopies(100, colors));
     }
 }
-    // *10 Сортировка списка.
-    // *11 Сравнить время работы тысячи повторений пункта 3 для ArrayList и LinkedList.
 
 
